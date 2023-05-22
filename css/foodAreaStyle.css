@@ -1,0 +1,54 @@
+/* Стиль карточек товара */
+
+.food-card-area {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 30px;
+    margin: 50px;
+    justify-content: center;
+}
+
+.commodity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 290px;
+    height: 420px;
+}
+
+.product-picture {
+    text-align: center;
+}
+
+.product-picture > figcaption {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.product-picture > img {
+    width: 250px;
+    height: 300px;
+}
+
+.price {
+    font-size: 18px;
+}
+
+.buy-button {
+    cursor: pointer;
+    width: 150px;
+    height: 25px;
+    margin: 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(103, 103, 240);
+    color: white;
+    font-size: 18px;
+}
+
+.date-added {
+    font-size: 12px;
+}

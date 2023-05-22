@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etalon pet food</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/foodAreaStyle.css">
+    <link rel="stylesheet" href="./css/basket.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <ul id="nav-list">
+                <li id="nav-catFood" class="nav-item">Еда для кошек</li>
+                <li id="nav-dogFood" class="nav-item ">Еда для собак</li>
+                <li id="nav-rodentsFood" class="nav-item">Еда для грызунов</li>
+            </ul>
+            <div id="theme-changes">
+                <img id="theme-changes-img" src="./img/nav-bar/creative-idea.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="basket" class="basket-hide">
+            <figure id="basket-figure">
+                <img id="basket-image" src="" alt="Фото продукта">
+                <figcaption id="basket-descriptions">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Id non omnis debitis delectus maxime quidem amet pariatur. 
+                    Et, illo! Unde atque dicta tenetur, eaque accusantium aperiam ab sit pariatur placeat?
+                </figcaption>
+            </figure>
+            <form id="basket-form" action="">
+                <input id="basket-form-number" type="number" min="0" placeholder="Количество упаковок">
+
+                <legend>Масса упаковки</legend>
+                <label for="weight-5">
+                    <input type="radio" class="basket-form-radio" value="5 кг" name="weight" id="weight-5">
+                    5 кг
+                </label>
+                <label for="weight-10">
+                    <input type="radio" class="basket-form-radio" value="10 кг" name="weight" id="weight-10"  >
+                    10 кг
+                </label>
+                <label for="weight-15">
+                    <input type="radio" class="basket-form-radio" value="15 кг" name="weight" id="weight-15">
+                    15 кг
+                </label>
+                
+                
+                <input id="basket-form-buy" class="btn-form" type="submit" value="Купить">
+                <input id="basket-form-close" class="btn-form" type="button" value="Закрыть">
+            </form>
+        </section>
+
+        <div id="up" class="up-hide">
+            &#9650;
+        </div>
+
+        <section id="welcome-screen">
+            <figure>
+                <figcaption id="welcome-screen-title">
+                    <h1 id="title-logo">Etalon Pet Food</h1>
+                </figcaption>
+            </figure>
+        </section>
+
+        <section id="cat-food" class="area-of-products-sold">
+            <h2 class="section-titles cat-title">Еда для кошек</h2>
+            <div id="cat-food-area" class="food-card-area">
+            </div>
+        </section>
+
+        <section id="dog-food" class="area-of-products-sold">
+            <h2 class="section-titles dog-title">Еда для собак</h2>
+            <div id="dog-food-area" class="food-card-area">
+            </div>
+        </section>
+
+        <section id="rodents-food" class="area-of-products-sold">
+            <h2 class="section-titles rodents-title">Еда для грызунов</h2>
+            <div id="rodents-food-area" class="food-card-area">
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <section id="footer-content">
+            <section id="our-location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d657.3363756656893!2d30.28719115141839!3d59.94153336464318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696312383a505dd%3A0x15cd784518f03659!2zMy3RjyDQu9C40L0uINCSLiDQni4sIDjQsCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5OTAzNA!5e0!3m2!1sru!2sru!4v1684324384674!5m2!1sru!2sru" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section>
+                <h3>С нами можно связаться</h3>
+                <p class="contact-information" id="phone">8 (900) 000 00-00</p>
+                <p class="contact-information" id="email">EtalonPetFood@email.com</p>
+                <p class="contact-information" id="telegram">Telegram</p>
+                <p class="contact-information" id="vk">ВКонтакте</p>
+            </section>
+            <section>
+                <h3>О нас</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Tenetur neque atque optio, numquam voluptatem velit ducimus, 
+                    exercitationem mollitia unde eius illo quos dolorem vitae explicabo quia amet quae quam suscipit.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Tenetur neque atque optio, numquam voluptatem velit ducimus, 
+                    exercitationem mollitia unde eius illo quos dolorem vitae explicabo quia amet quae quam suscipit.
+                </p>
+            </section>
+        </section>
+    </footer>
+</body>
+
+
+<script src="./js/store.js"></script>
+<script  src="./js/pageElements.js"></script>
+<script  src="./js/index.js"></script>
+
+</html>
