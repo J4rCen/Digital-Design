@@ -18,4 +18,4 @@ const basketForm = docElements.querySelector("#basket-form");
 const basketImage = docElements.querySelector("#basket-image");
 const basketBuy = docElements.querySelector("#basket-form-buy");
 const basketClose = docElements.querySelector("#basket-form-close");
-const basketRadio = docElements.querySelectorAll(".basket-form-radio")
+// const basketRadio = docElements.querySelectorAll(".basket-form-radio")

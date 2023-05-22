@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etalon pet food</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/foodAreaStyle.css">
-    <link rel="stylesheet" href="./css/basket.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/foodAreaStyle.css">
+    <link rel="stylesheet" href="css/basket.css">
 </head>
 <body>
     <header id="header">
@@ -33,22 +33,25 @@
                     Et, illo! Unde atque dicta tenetur, eaque accusantium aperiam ab sit pariatur placeat?
                 </figcaption>
             </figure>
-            <form id="basket-form" action="">
-                <input id="basket-form-number" type="number" min="0" placeholder="Количество упаковок">
+            <form id="basket-form">
+                <input id="basket-form-number" value="0" type="number" min="0" placeholder="Количество упаковок">
 
-                <legend>Масса упаковки</legend>
-                <label for="weight-5">
-                    <input type="radio" class="basket-form-radio" value="5 кг" name="weight" id="weight-5">
-                    5 кг
-                </label>
-                <label for="weight-10">
-                    <input type="radio" class="basket-form-radio" value="10 кг" name="weight" id="weight-10"  >
-                    10 кг
-                </label>
-                <label for="weight-15">
-                    <input type="radio" class="basket-form-radio" value="15 кг" name="weight" id="weight-15">
-                    15 кг
-                </label>
+                <fieldset id="weight">
+                    <legend>Масса товара</legend>
+                    <label for="weight-5">
+                        <input type="radio" class="basket-form-radio" name="weight" id="weight-5" value="5 кг">
+                        5 кг
+                    </label>
+                    <label for="weight-10">
+                        <input type="radio" class="basket-form-radio" name="weight" id="weight-10" value="10 кг">
+                        10 кг
+                    </label>
+                    <label for="weight-15">
+                        <input type="radio" class="basket-form-radio" name="weight" id="weight-15" value="15 кг">
+                        15 кг
+                    </label>
+                </fieldset>
+                
                 
                 
                 <input id="basket-form-buy" class="btn-form" type="submit" value="Купить">

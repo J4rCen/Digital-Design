@@ -37,18 +37,20 @@ function resetForm() {
     basketForm.reset()
 }
 
-basketRadio.forEach(item => {
-    
-})
-
 basketForm.addEventListener("submit", (item) => {
-    
-    
 
-    // alert("Вы купили " + item.target[0].value + " упаковок, массой " + item.target)
+
+    const data = new FormData(basketForm)
+    let checkResult = ""
+
+    for(let a of data) {
+        checkResult = a[1]
+    }
     
-    // item.preventDefault();
-    // resetForm();
+    alert("Вы купили " + item.target[0].value + " упаковок, массой " + checkResult)
+    
+    item.preventDefault();
+    resetForm();
 })
 
 basketClose.addEventListener("click", () => {
