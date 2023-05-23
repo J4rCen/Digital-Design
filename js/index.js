@@ -61,3 +61,11 @@ themeChanges.addEventListener("click", ()  => {
         docElements.head.children[5].setAttribute("href", "css/lightTheme.css")
     }
 })
+
+writeToUsForm.addEventListener("submit", (item) => {
+    
+    alert("Спасибо мы получили ваше сообщения: " + '"' + item.target[1].value + '"\n' + "Ответ будет отправлен на вашу почту: " + item.target[0].value)
+
+    item.preventDefault()
+    writeToUsForm.reset()
+})

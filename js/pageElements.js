@@ -20,3 +20,5 @@ const basketBuy = docElements.querySelector("#basket-form-buy");
 const basketClose = docElements.querySelector("#basket-form-close");
 
 const themeChanges = docElements.querySelector("#theme-changes");
+
+const writeToUsForm = docElements.querySelector("#form-writeToUs")
