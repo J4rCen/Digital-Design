@@ -1,0 +1,19 @@
+{
+  "name": "animal-food-store",
+  "version": "1.0.0",
+  "description": "test task for digital design",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J4rCen/Digital-Design.git"
+  },
+  "author": "J4rCen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J4rCen/Digital-Design/issues"
+  },
+  "homepage": "https://github.com/J4rCen/Digital-Design#readme"
+}
