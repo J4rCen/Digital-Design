@@ -1,5 +1,4 @@
 /* Настройки для всего html */
-
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +12,14 @@ html {
 
 /* Start Header */
 
+@media (max-width: 500px) {
+    
+}
+
+@media (min-width: 1000px) {
+    
+}
+
 #header {
     display: inline-block;
     position: fixed;
@@ -22,10 +29,22 @@ html {
 }
 
 /* Start nav-bar */
+
+@media (max-width: 500px) {
+    .nav-item {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .nav-item {
+        font-size: 20px;
+    }
+}
+
     #nav-bar {
         display: flex;
         height: 30px;
-        background-color: #0D345D;
     }
 
     #nav-list {
@@ -49,7 +68,6 @@ html {
 
     .nav-item {
         text-align: center;
-        font-size: 20px;
         text-decoration: none;
         width: 100%;
         color: white;
@@ -60,34 +78,55 @@ html {
 
 /* Start welcome-screen */
 
+@media (max-width: 500px) {
     #welcome-screen {
-        display: block;
-        clear: both;
-        background-image: url("/img/logo/logo1.webp");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 100vh;
+        height: 300px;
         width: 100%;
+        background-position: right;
+    }
+
+    #title-logo {
+        font-size: 24px;
     }
 
     #welcome-screen-title {
-        position: absolute;
-        top: 300px;
-        left: 100px;
+        bottom: 30px;
+        left: 30px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #welcome-screen {
+        height: 100vh;
+        width: 100%;
+        background-position: center;
     }
 
     #title-logo {
         font-size: 64px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        color: #0a7116;
-        user-select: none;
     }
 
-    #img-logo {
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
+    #welcome-screen-title {
+        top: 300px;
+        left: 100px;
+    }
+}
+
+    #welcome-screen {
+        position: relative;
+        display: block;
+        clear: both;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #welcome-screen-title {
+        position: absolute;
+    }
+
+    #title-logo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        user-select: none;
     }
 
 /* End welcome-screen */
@@ -105,6 +144,8 @@ html {
         width: 100%;
     }
 
+    
+
     #up {
         position: fixed;
         cursor: pointer;
@@ -114,11 +155,9 @@ html {
         right: 20px;
         height: 75px;
         width: 75px;
-        background: rgba(165, 165, 165, 0.6);
         z-index: 5;
         border-radius: 10px;
         font-size: 40px;
-        color: rgba(255, 255, 255);
     }
 
     .up-show {
@@ -144,8 +183,6 @@ html {
         text-align: center;
         font-size: 34px;
         padding: 5px;
-        color: white;
-        background-color: #0D345D;
     }
 
     .area-of-products-sold {
@@ -153,12 +190,23 @@ html {
         position: relative;
         min-height: 100vh;
         width: 100%;
-        background-color: #F8F7F3;
     }
 
 /* End main */
 
 /* Start footer */
+
+@media (max-width: 500px) {
+    #footer-content {
+        grid-template-rows: 400px, 210px, 210px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #footer-content {
+        grid-template-columns: repeat(3, 400px);
+    }
+}
 
 #footer {
     display: block;
@@ -169,7 +217,6 @@ html {
 
 #footer-content {
     display: grid;
-    grid-template-columns: repeat(3, 400px);
     justify-items: center;
     justify-content: center;
     gap: 10px;

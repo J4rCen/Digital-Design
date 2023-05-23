@@ -38,16 +38,13 @@ function resetForm() {
 }
 
 basketForm.addEventListener("submit", (item) => {
-
-
     const data = new FormData(basketForm)
     let checkResult = ""
-
     for(let a of data) {
         checkResult = a[1]
     }
     
-    alert("Вы купили " + item.target[0].value + " упаковок, массой " + checkResult)
+    alert("Вы купили " + item.target[0].value + `${item.target[0].value == 1 ? " упаковку" : item.target[0].value > 1 && item.target[0].value < 5 ? " упаковки" : item.target[0].value >= 5 ? " упаковок" : ""}`+ ", массой " + checkResult)
     
     item.preventDefault();
     resetForm();
@@ -55,4 +52,12 @@ basketForm.addEventListener("submit", (item) => {
 
 basketClose.addEventListener("click", () => {
     resetForm();
+})
+
+themeChanges.addEventListener("click", ()  => {
+    if(docElements.head.children[5].getAttribute("href") == "css/lightTheme.css") {
+        docElements.head.children[5].setAttribute("href", "css/darkTheme.css")
+    } else {
+        docElements.head.children[5].setAttribute("href", "css/lightTheme.css")
+    }
 })

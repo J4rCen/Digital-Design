@@ -1,17 +1,27 @@
+@media (max-width: 500px) {
+    #basket {
+        height: 600px;
+        width: 400px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1000px) {
+    #basket {
+        height: 650px;
+        width: 500px;
+        font-size: 18px;
+    }
+}
+
 #basket {
-    
     position: fixed;
     flex-direction: column;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 5;
-    height: 650px;
-    width: 500px;
-    background: #F8F7F3;
     border-radius: 10px;
-    border: 1px solid black;
-    font-size: 18px;
     margin: 0 auto;
 }
 

@@ -1,8 +1,39 @@
 /* Стиль карточек товара */
 
+@media (max-width: 500px) {
+    .food-card-area{
+        grid-template-rows: 300px;
+    }
+
+    .commodity-card {
+        width: 250px;
+        height: 280px;
+    }
+
+    .product-picture > img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .food-card-area{
+        grid-template-columns: repeat(4, 300px);
+    }
+    
+    .commodity-card {
+        width: 290px;
+        height: 420px;
+    }
+
+    .product-picture > img {
+        width: 250px;
+        height: 300px;
+    }
+}
+
 .food-card-area {
     display: grid;
-    grid-template-columns: repeat(4, 300px);
     gap: 30px;
     margin: 50px;
     justify-content: center;
@@ -12,11 +43,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     border-radius: 5px;
     padding: 5px;
-    width: 290px;
-    height: 420px;
 }
 
 .product-picture {
@@ -26,11 +54,6 @@
 .product-picture > figcaption {
     padding: 5px;
     font-size: 20px;
-}
-
-.product-picture > img {
-    width: 250px;
-    height: 300px;
 }
 
 .price {
